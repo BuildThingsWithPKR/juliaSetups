@@ -86,7 +86,58 @@ z = vcat(x,y) # another way of (concatenation)
 x = [ 9, 4, 3, 0, 5 ];
 y = x[2:4];
 x[4:5] = [ -2, -3 ]; # we change x here but corresponding y will not change
-x 
+
+
+##= more on indexing
+julia> x = [ 1, 0, 0, -2, 2 ];
+julia> d = x[2:end] - x[1:end-1]
+4-element Vector{Int64}:
+-1
+-20
+4
+
+julia> x = [ 1.0, 0 ];
+y = [ 1.0, -1.0 ];
+z = [ 0, 1.0];
+julia> list = [ x, y, z ]
+3-element Vector{Vector{Float64}}:
+[1.0, 0.0]
+[1.0, -1.0]
+[0.0, 1.0]
+julia> list[2]
+# Second element of list
+2-element Vector{Float64}:
+1.0
+-1.0
+julia> list = ( x, y, z )
+([1.0, 0.0], [1.0, -1.0], [0.0, 1.0])
+julia> list[3]
+# Third element of list
+2-element Vector{Float64}:
+0.0
+1.0
+
+# zero vector:
+x = zeros(3)
+
+# unit vectors
+ei = zeros(4)
+ei[2] = 1
+
+# unit vector using inline function
+unit_vector(i,n) = [zeros(i-1); 1 ; zeros(n-i)]
+ei=unit_vector(2,4)
+
+# ones vector
+one = ones(5)
+
+# random vector
+rand(2) # it generated random float and different value each time
+
+
+
+
+
 
 
 
