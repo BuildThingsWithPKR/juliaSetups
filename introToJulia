@@ -35,3 +35,31 @@ x[3] # this produces 3.6
 x[3] = 4.0 # the new value is 4.0
 
 # use semicolon at the end of the statement to supress the output
+
+# get the last element
+x[end]
+x[length(x)]
+
+
+# assignment vs copy
+# assignment (both vectors change after the assignment of any one)
+y = x
+# after this if we change x or elements of x, then y will change
+# the converse is also true
+x = [ -1.1, 0.0, 3.6, -7.2 ];
+y = x;
+x[3]=4.0 # here both x and y vector change
+
+# copy one vector to another
+
+# here changing the element of will not change the elements of y
+x = [ -1.1, 0.0, 3.6, -7.2 ];
+y = copy(x)
+x[3]=4.0 # here onle x changes
+
+
+
+
+
+
+
