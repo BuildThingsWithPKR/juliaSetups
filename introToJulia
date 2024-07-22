@@ -14,6 +14,7 @@ length(x)
 
 # another way to create a vector
 y = [-1.1; 0.0; 3.6; -7.2]
+# 4-element Vector{Float64}:
 
 # it also shows that the elements of the vector are float64 type
 # It also shows the length or number of elements
@@ -21,3 +22,4 @@ y = [-1.1; 0.0; 3.6; -7.2]
 # above are column vectors
 # if we remove comma or semicolon, it forms a row vector
 a = [-1.1 0.0 3.6]
+# 1×3 Matrix{Float64}:
