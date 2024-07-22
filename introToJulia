@@ -26,3 +26,12 @@ a = [-1.1 0.0 3.6]
 
 # create a tuple
 b = (1,2)
+
+
+# indexing
+x[3] # this produces 3.6
+
+# assigning
+x[3] = 4.0 # the new value is 4.0
+
+# use semicolon at the end of the statement to supress the output
