@@ -55,7 +55,8 @@ x[3]=4.0 # here both x and y vector change
 # here changing the element of will not change the elements of y
 x = [ -1.1, 0.0, 3.6, -7.2 ];
 y = copy(x)
-x[3]=4.0 # here onle x changes
+x[3]=4.0 # here only x changes
+y[1]=2.0 # only y changes, no change in x
 
 
 
