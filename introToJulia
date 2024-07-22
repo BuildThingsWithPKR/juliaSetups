@@ -23,3 +23,6 @@ y = [-1.1; 0.0; 3.6; -7.2]
 # if we remove comma or semicolon, it forms a row vector
 a = [-1.1 0.0 3.6]
 # 1×3 Matrix{Float64}:
+
+# create a tuple
+b = (1,2)
