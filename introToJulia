@@ -77,9 +77,12 @@ x[1]
 # block or stacked vector
 x = [1,2];
 y = [1,1,2];
-z = [x,y]; # vector of vectors, similar to list or tuple
+z = [x,y]; # array of vectors, similar to list or tuple
+z = (x,y); # list or tuple
 z = [x;y]; # vector of stacked elements of x and y (concatenation)
 z = vcat(x,y) # another way of (concatenation)
+
+
 
 
 
