@@ -58,7 +58,17 @@ y = copy(x)
 x[3]=4.0 # here only x changes
 y[1]=2.0 # only y changes, no change in x
 
+# check equality of vectors
+x = [ -1.1, 0.0, 3.6, -7.2 ];
+y = copy(x) # we copy here
+y[3] = 4.0
+y==x
+z=x # we assign here
+z==x
+z[3]=4.0
+z==x
 
+# [1.3] and 1.3 are not same. the former is a vector and the later is a scalar
 
 
 
