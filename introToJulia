@@ -82,8 +82,11 @@ z = (x,y); # list or tuple
 z = [x;y]; # vector of stacked elements of x and y (concatenation)
 z = vcat(x,y) # another way of (concatenation)
 
-
-
+# reassign a range of values for a vector
+x = [ 9, 4, 3, 0, 5 ];
+y = x[2:4];
+x[4:5] = [ -2, -3 ]; # we change x here but corresponding y will not change
+x 
 
 
 
