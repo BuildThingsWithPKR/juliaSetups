@@ -13,3 +13,12 @@ update_julia()
 
 # Verify the updated version
 versioninfo()
+
+# install package
+# enter ]
+# this will show (@v1.8) pkg>
+
+# now install package
+(@v1.8) pkg> add LinearAlgebra
+(@v1.8) pkg> add SparseArrays
+(@v1.8) pkg> add Plots
