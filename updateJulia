@@ -1,0 +1,15 @@
+https://www.educative.io/answers/how-to-upgrade-julia-to-a-new-release
+
+# First, check the version of Julia using the following command:
+versioninfo()
+
+# Add packages
+using Pkg
+Pkg.add("UpdateJulia")  
+
+# Update the version
+using UpdateJulia
+update_julia()
+
+# Verify the updated version
+versioninfo()
