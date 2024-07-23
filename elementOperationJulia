@@ -1,0 +1,38 @@
+p_initial = [ 22.15, 89.32, 56.77 ];
+p_final = [ 23.05, 87.32, 57.13 ];
+
+r = (p_final - p_initial) ./ p_initial
+3-element Vector{Float64}:
+  0.04063205417607233
+ -0.02239140170174653
+  0.006341377488109907
+
+# elementwise multiplication
+r1 = p_initial.*p_final
+3-element Vector{Float64}:
+  510.5575
+ 7799.422399999999
+ 3243.2701
+
+# elementwwise division
+r2 = p_initial./p_final
+3-element Vector{Float64}:
+ 0.9609544468546637
+ 1.0229042601923959
+ 0.9936985821809907
+
+# elementwise 
+r3 = p_initial.\p_final 
+same as 
+p_final./p_initial
+3-element Vector{Float64}:
+ 1.0406320541760723
+ 0.9776085982982534
+ 1.0063413774881098
+
+# element wise exponentiation
+r3 = p_initial.^p_final
+3-element Vector{Float64}:
+ 1.0253319474221486e31
+ 2.2742685272154714e170
+ 1.6323467808564674e100
