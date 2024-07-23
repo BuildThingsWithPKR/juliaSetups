@@ -16,3 +16,19 @@ x+y gives
 
 1×3 Matrix{Int64}:
  1  5  10
+
+# same goes with subtraction
+x = [0,3,7];
+y = [1,2,3];
+x-y gives 
+3-element Vector{Int64}:
+ -1
+  1
+  4
+
+x = [1 2 3];
+y = [0 3 7];
+
+x+y gives
+1×3 Matrix{Int64}:
+ 1  -1  -4
