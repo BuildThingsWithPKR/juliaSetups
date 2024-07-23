@@ -1,0 +1,12 @@
+x = [ -1, 2, 2 ];
+y = [ 1, 0, -3 ];
+r1 = x'*y
+r2 = y'*x
+
+# Net present value
+c = [ 0.1, 0.1, 0.1, 1.1 ]; # Cash flow vector
+n = length(c);
+d = (1+r).^-(0:n-1)
+npv = d'*c
+
+# (0:n-1), which expands to [0,1,...,n-1]
