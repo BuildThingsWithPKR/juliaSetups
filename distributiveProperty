@@ -1,0 +1,12 @@
+# check distributive property
+# β(a + b) = βa + βb
+a = rand(3)
+b = rand(3)
+beta = rand()
+
+lhs = beta*(a+b)
+rhs = beta*a+beta*b
+
+  # the following may result false due to rounding of errors
+trunc(lhs)==trunc(rhs)
+
