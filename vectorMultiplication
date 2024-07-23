@@ -46,3 +46,28 @@ x/3
   0.0
   0.6666666666666666
  -0.3333333333333333
+
+# adding scalar to a vector
+x.+3 # this means adding a to each element of x
+
+also x+3*ones(length(x)) gives same result
+
+# same goes with subtraction
+x.-3 # this means adding a to each element of x
+
+# integer int64 added to int64 results in int64
+# int64 added to float64 results float64
+# float64 added to float64 results in float64
+
+# truncate or cast 
+
+# this gives a Float64 of floor value
+x = trunc(1.2) same as floor(1.2)
+
+# this gives Int64
+x = trunc(Int, 1.2)
+
+# get data type
+typeof(x)
+
+
