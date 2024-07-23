@@ -1,0 +1,21 @@
+# define a sparse vector
+using SparseArrays
+
+a = sparsevec( [ 123456, 123457 ], [ 1.0, -1.0 ], 10^6 )
+
+length(a)
+
+nnz(a)
+
+b = randn(10^6); # An ordinary (non-sparse) vector
+
+@time 2*a;
+# Computed efficiently!
+
+@time 2*b;
+
+@time a'*b;
+
+@time b'*b;
+
+@time c = a + b; # a gets converted to a normal vector
