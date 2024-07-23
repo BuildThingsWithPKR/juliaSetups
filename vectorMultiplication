@@ -1,1 +1,48 @@
+x = [0,2,-1];
+2.2*x
+2.2x
+x*2.2
+x2.2
 
+# works
+2.2*x
+3-element Vector{Float64}:
+  0.0
+  4.4
+ -2.2
+
+2.2x
+3-element Vector{Float64}:
+  0.0
+  4.4
+ -2.2
+
+x*2.2
+3-element Vector{Float64}:
+  0.0
+  4.4
+ -2.2
+
+# doesn't work
+x2.2
+ERROR: syntax: extra token "0.2" after end of expression
+Stacktrace:
+ [1] top-level scope
+   @ none:1
+
+# division
+x/3
+3\x
+both gives same result
+
+x/3
+3-element Vector{Float64}:
+  0.0
+  0.6666666666666666
+ -0.3333333333333333
+
+3\x
+3-element Vector{Float64}:
+  0.0
+  0.6666666666666666
+ -0.3333333333333333
