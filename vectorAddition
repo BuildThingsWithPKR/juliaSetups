@@ -29,6 +29,8 @@ x-y gives
 x = [1 2 3];
 y = [0 3 7];
 
-x+y gives
+x-y gives
 1×3 Matrix{Int64}:
  1  -1  -4
+
+
