@@ -1,0 +1,31 @@
+# linear function
+
+f(x) = x[1]+x[2]-x[4]^2
+f([-1,0,1,2])
+
+# superposition
+a = [-2, 0, 1, -3];
+f(x) = a'*x
+# Inner product function
+x = [2, 2, -1, 1];
+y = [0, 1, -1, 0];
+alpha = 1.5;
+beta = -3.7;
+
+# f(x) = a'*x,  we have defined it before
+lhs = f(alpha * x + beta * y)
+
+rhs = alpha*f(x) + beta*f(y)
+
+# f(e3) = a3 check?
+e3=[0,0,1,0];
+f(e3)
+
+# define average of x = (1'*x)length(x)
+avg(x)= (ones(length(x))/length(x))'*(x);
+x = [1,-3,2,-1];
+avg(x)
+
+# 
+
+
