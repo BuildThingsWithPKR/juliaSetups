@@ -1,0 +1,12 @@
+f(x) = x[1] + exp(x[2]-x[1]);
+# A function
+# And its gradient
+grad_f(z) = [1-exp(z[2]-z[1]), exp(z[2]-z[1])];
+z = [1, 2];
+# Taylor approximation at z
+f_hat(x) = f(z) + grad_f(z)'*(x-z);
+# Let's compare f and f_hat for some specific x's
+
+f([1,2]), f_hat([1,2])
+f([0.96,1.98]), f_hat([0.96,1.98])
+f([1.10,2.11]), f_hat([1.10,2.11])
