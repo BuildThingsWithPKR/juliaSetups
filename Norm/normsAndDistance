@@ -1,0 +1,35 @@
+x = [ 2, -1, 2 ];
+using LinearAlgebra
+norm(x)
+sqrt(x'*x)
+sqrt(sum(x.^2))
+x = randn(10); y = randn(10);
+lhs = norm(x+y)
+rhs = norm(x) + norm(y)
+
+rms(x) = norm(x) / sqrt(length(x));
+t = 0:0.01:1;
+# List of times
+
+x = cos.(8*t) - 2*sin.(11*t);
+
+avg(x)
+
+rms(x)
+
+using Plots
+plot(t, x)
+plot!(t, avg(x)*ones(length(x)))
+plot!(t, (avg(x)+rms(x))*ones(length(x)), color = :green)
+plot!(t, (avg(x)-rms(x))*ones(length(x)), color = :green)
+plot!(legend = false)
+
+
+# Define Chebyshev bound function
+cheb_bound(x,a) = floor(norm(x)^2/a);
+a = 1.5;
+cheb_bound(x,a)
+
+# Number of entries of x with |x_i| >= a
+sum(abs.(x) .>= a)
+
